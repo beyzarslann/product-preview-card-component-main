@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+:root {
+  --darkcyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --darkblue: hsl(212, 21%, 14%);
+  --grayishblue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--cream);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 650px;
+  height: 500px;
+  background-color: var(--white);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card .card-image img {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card .details {
+  padding-top: 30px;
+  padding-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card .details h3 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grayishblue);
+  letter-spacing: 4px;
+  opacity: 0.6;
+}
+
+.card .details h1 {
+  font-family: "Fraunces", sans-serif;
+}
+
+.card .details p {
+  font-family: "Montserrat", sans-serif;
+  color: var(--grayishblue);
+  font-size: 14px;
+  opacity: 0.8;
+  line-height: 23px;
+}
+
+.money {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.money h1 {
+  color: var(--darkcyan);
+}
+
+.money h6 {
+  color: var(--grayishblue);
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.7;
+  text-decoration: line-through;
+  margin-top: 11px;
+  margin-left: 30px;
+  font-size: 16px;
+}
+
+.button {
+  padding-top: 10px;
+}
+
+.card-button {
+  background-color: var(--darkcyan);
+  width: 230px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  align-items: center;
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card-button img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
